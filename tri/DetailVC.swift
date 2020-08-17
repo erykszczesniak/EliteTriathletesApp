@@ -22,13 +22,7 @@ class DetailVC: UIViewController {
             iconImageView.image = UIImage(named: icon?.imageName ?? "")
         }
     }
-    @IBOutlet var nameLable: UILabel! {
-        didSet {
-            if let icon = icon {
-                nameLabel.text = "$\(icon.name)"
-            }
-        }
-    }
+   
     
     var icon: Triathlete?
     
