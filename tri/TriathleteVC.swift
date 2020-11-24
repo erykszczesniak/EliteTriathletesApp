@@ -10,8 +10,7 @@ import UIKit
 
 class TriathleteVC: UIViewController {
     
-        @IBOutlet var backgroundImageView: UIImageView!
-        
+    @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
         private var triathletes = [Triathlete(name: "Jan Frodeno", imageName: "froden", description: "Jan Frodeno (born 18 August 1981) is a German triathlete. He is the gold medal winner in men's triathlon at the 2008 Summer Olympics in Beijing, 3-time winner of the Ironman World Championship in 2015, 2016, and 2019, and 2-time winner of the Ironman 70.3 World Championship in 2015 and 2018. He is the world record holder for the long distance, set in Roth, Germany in 2016 with 7:35:39 hours." ),
