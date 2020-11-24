@@ -4,7 +4,7 @@ import UIKit
 
 class DetailVC: UIViewController {
     
-    
+    var icon: Triathlete?
 
     @IBOutlet var nameLabel: UILabel! {
         didSet {
@@ -23,7 +23,4 @@ class DetailVC: UIViewController {
         }
     }
    
-    
-    var icon: Triathlete?
-    
 }

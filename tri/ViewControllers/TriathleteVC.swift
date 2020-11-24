@@ -4,17 +4,16 @@ class TriathleteVC: UIViewController {
     
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
-        private var triathletes = [Triathlete]()
+    var triathletes = [Triathlete]()
+
         
     override func viewDidLoad() {
         super.viewDidLoad()
-       // Apply blurring effect
-       createBackgroundImage()
+        createBackgroundImage()
+        parseJSON()
             
     }
-
-        
+    
     func createBackgroundImage() {
         // Apply blurring effect
         backgroundImageView.image = UIImage(named: "cloud")
@@ -29,11 +28,8 @@ class TriathleteVC: UIViewController {
     }
 
     extension TriathleteVC: UICollectionViewDelegate, UICollectionViewDataSource {
-        func numberOfSections(in collectionView: UICollectionView) -> Int {
-            return 1
-        }
         
-        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return triathletes.count
         }
         
