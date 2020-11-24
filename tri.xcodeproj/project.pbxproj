@@ -62,18 +62,42 @@
 		7A0C67EE24EA72B200871B7F /* tri */ = {
 			isa = PBXGroup;
 			children = (
+				7A9CCEF0256D580B00E82079 /* ViewControllers */,
+				7A9CCEEF256D57F900E82079 /* Model */,
 				7A0C67EF24EA72B200871B7F /* AppDelegate.swift */,
 				7A0C67F124EA72B200871B7F /* SceneDelegate.swift */,
-				7A0C67F324EA72B200871B7F /* TriathleteVC.swift */,
-				7A0C680724EA78CE00871B7F /* DetailVC.swift */,
-				7A0C680524EA732300871B7F /* TriathleteCell.swift */,
-				7A0C680324EA72F300871B7F /* Triathlete.swift */,
 				7A0C67F524EA72B200871B7F /* Main.storyboard */,
 				7A0C67F824EA72B300871B7F /* Assets.xcassets */,
 				7A0C67FA24EA72B300871B7F /* LaunchScreen.storyboard */,
 				7A0C67FD24EA72B300871B7F /* Info.plist */,
 			);
 			path = tri;
+			sourceTree = "<group>";
+		};
+		7A9CCEEF256D57F900E82079 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A0C680324EA72F300871B7F /* Triathlete.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A9CCEF0256D580B00E82079 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A0C67F324EA72B200871B7F /* TriathleteVC.swift */,
+				7A0C680724EA78CE00871B7F /* DetailVC.swift */,
+				7A9CCEF1256D582300E82079 /* Celll */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7A9CCEF1256D582300E82079 /* Celll */ = {
+			isa = PBXGroup;
+			children = (
+				7A0C680524EA732300871B7F /* TriathleteCell.swift */,
+			);
+			path = Celll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
