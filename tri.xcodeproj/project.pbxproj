@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A097CE5258039370037D6B1 /* TriathleteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A097CE4258039370037D6B1 /* TriathleteViewModel.swift */; };
 		7A0C67F024EA72B200871B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C67EF24EA72B200871B7F /* AppDelegate.swift */; };
 		7A0C67F224EA72B200871B7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C67F124EA72B200871B7F /* SceneDelegate.swift */; };
 		7A0C67F424EA72B200871B7F /* TriathleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C67F324EA72B200871B7F /* TriathleteVC.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A097CE4258039370037D6B1 /* TriathleteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathleteViewModel.swift; sourceTree = "<group>"; };
 		7A0C67EC24EA72B200871B7F /* tri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0C67EF24EA72B200871B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A0C67F124EA72B200871B7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A097CE32580391B0037D6B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A097CE4258039370037D6B1 /* TriathleteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7A0C67E324EA72B200871B7F = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		7A0C67EE24EA72B200871B7F /* tri */ = {
 			isa = PBXGroup;
 			children = (
+				7A097CE32580391B0037D6B1 /* ViewModel */,
 				7A9CCEF4256D5C4500E82079 /* Extension */,
 				7A9CCEF1256D582300E82079 /* Celll */,
 				7A9CCEF0256D580B00E82079 /* ViewControllers */,
@@ -192,6 +203,7 @@
 				7A0C680624EA732300871B7F /* TriathleteCell.swift in Sources */,
 				7A0C67F024EA72B200871B7F /* AppDelegate.swift in Sources */,
 				7A0C67F224EA72B200871B7F /* SceneDelegate.swift in Sources */,
+				7A097CE5258039370037D6B1 /* TriathleteViewModel.swift in Sources */,
 				7A0C680824EA78CE00871B7F /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

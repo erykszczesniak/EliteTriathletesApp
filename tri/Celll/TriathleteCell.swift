@@ -1,11 +1,3 @@
-//
-//  TriathleteCell.swift
-//  Triathletes
-//
-//  Created by Eryk Szcześniak on 16/08/2020.
-//  Copyright © 2020 Eryk Szcześniak. All rights reserved.
-//
-
 import UIKit
 
 class TriathleteCell: UICollectionViewCell {
@@ -13,5 +5,13 @@ class TriathleteCell: UICollectionViewCell {
      @IBOutlet var imageView: UIImageView!
      @IBOutlet var nameLabel: UILabel!
     
+    private var model: Triathlete?
 
+    func configure(with model: Triathlete) {
+        self.model = model
+        nameLabel.text = model.name
+        imageView.image = UIImage(named: model.imageName)
+         
+
+    }
 }

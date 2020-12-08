@@ -7,7 +7,7 @@ extension TriathleteVC {
         if let url = Bundle.main.url(forResource: "triathlete", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
-                triathletes = try JSONDecoder().decode([Triathlete].self, from: data)
+                viewModel.triathletes = try JSONDecoder().decode([Triathlete].self, from: data)
             } catch {
                 print(error)
             }
@@ -17,15 +17,14 @@ extension TriathleteVC {
 extension TriathleteVC: UICollectionViewDelegate, UICollectionViewDataSource {
        
    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-           return triathletes.count
+    return viewModel.numberOfItems
        }
        
        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TriathleteCell
-           let icon = triathletes[indexPath.row]
-           cell.imageView.image = UIImage(named: icon.imageName)
-           cell.nameLabel.text = "\(icon.name)"
-           // Apply round corner
+        let icon = viewModel.getTriathletes(at: indexPath)
+        cell.configure(with: icon)
+        
            cell.layer.cornerRadius = 4.0
            return cell
        }
@@ -34,7 +33,7 @@ extension TriathleteVC: UICollectionViewDelegate, UICollectionViewDataSource {
              if segue.identifier == "showIconDetail" {
                  if let indexPaths = collectionView?.indexPathsForSelectedItems {
                      let destinationController = segue.destination as! DetailVC
-                     destinationController.icon = triathletes[indexPaths[0].row]
+                    destinationController.icon = viewModel.triathletes[indexPaths[0].row]
                      collectionView?.deselectItem(at: indexPaths[0], animated: false)
            }
        }
